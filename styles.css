@@ -243,6 +243,9 @@ main {
   :root {
     --issue-width: 300px;
   }
+  main {
+    padding: 50px 0 100px 0;
+  }
   .footer-text-about {
     font-size: 14px;
   }

@@ -11,6 +11,8 @@
   --color-text: #251d20;
   --font-size-body: 18px;
   --line-height: 25px;
+  --issue-width: 450px;
+  --issue-height: 600px;
 }
 
 body {
@@ -21,6 +23,7 @@ body {
   width: 100vw;
   height: 100vh;
   position: relative;
+  transition: all 0.3s ease-in-out;
 }
 
 * {
@@ -35,6 +38,12 @@ a {
   text-decoration: none;
   font-family: inherit;
   color: inherit;
+}
+
+button {
+  border: none;
+  outline: none;
+  background: none;
 }
 
 header {
@@ -107,7 +116,7 @@ li {
 
 main {
   width: 100%;
-  height: 600px;
+  height: var(--issue-height);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,21 +124,22 @@ main {
 }
 
 .img-issue-cover {
-  width: 450px;
+  width: var(--issue-width);
 }
 
 .box-issue-cover {
   position: relative;
-  width: 450px;
-  height: 600px;
-  display: flex;
-  align-items: center;
+  width: var(--issue-width);
+  height: var(--issue-height);
+  transition: all 0.3s ease-in-out;
 }
 
 .issue {
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
+  transition: all 0.3s ease-in-out;
+  height: 100%;
 }
 
 .issue-8 {
@@ -155,4 +165,79 @@ main {
 }
 .issue-1 {
   transform: translateY(700%);
+}
+
+.label-issue-num {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.btn-slide {
+  background: #fff;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.box-btn-slide {
+  display: flex;
+  gap: 10px;
+}
+
+@media (max-width: 1200px) {
+  :root {
+    --issue-width: 400px;
+    --issue-height: 500px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .link-header-email {
+    display: none;
+  }
+  header {
+    justify-content: center;
+  }
+  .img-logo {
+    width: 200px;
+  }
+  body {
+    overflow-y: scroll;
+    position: initial;
+    height: auto;
+  }
+  footer {
+    position: initial;
+  }
+  main {
+    height: auto;
+    width: 100vw;
+    margin: 100px 0;
+    flex-direction: column;
+  }
+  .label-issue-num {
+    opacity: 1;
+    pointer-events: all;
+  }
+  .footer-issue-list {
+    display: none;
+  }
+  footer {
+    justify-content: center;
+  }
+  .footer-about {
+    width: 60%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer-about {
+    width: 90%;
+  }
+  :root {
+    --issue-width: 300px;
+  }
 }

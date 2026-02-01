@@ -104,3 +104,55 @@ li {
 .list-issue-link:hover {
   text-decoration: underline;
 }
+
+main {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.img-issue-cover {
+  width: 450px;
+}
+
+.box-issue-cover {
+  position: relative;
+  width: 450px;
+  height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.issue {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.issue-8 {
+  transform: translateY(0);
+}
+.issue-7 {
+  transform: translateY(100%);
+}
+.issue-6 {
+  transform: translateY(200%);
+}
+.issue-5 {
+  transform: translateY(300%);
+}
+.issue-4 {
+  transform: translateY(400%);
+}
+.issue-3 {
+  transform: translateY(500%);
+}
+.issue-2 {
+  transform: translateY(600%);
+}
+.issue-1 {
+  transform: translateY(700%);
+}

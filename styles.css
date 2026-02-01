@@ -231,6 +231,9 @@ main {
     width: 60%;
     text-align: center;
   }
+  .footer-text-about {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -239,5 +242,8 @@ main {
   }
   :root {
     --issue-width: 300px;
+  }
+  .footer-text-about {
+    font-size: 14px;
   }
 }

@@ -8,16 +8,44 @@
   --bg-issue-two: #1d3fbb;
   --bg-issue-one: #e30512;
   --font-family: "Roboto", sans-serif;
+  --color-text: #251d20;
 }
 
 body {
   margin: 0;
   padding: 0;
   overflow: hidden;
+  background: var(--bg-issue-eight);
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: var(--color-text);
+  font-family: var(--font-family);
+}
+
+a {
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
+  font-weight: bold;
+}
+
+header {
+  width: 100%;
+  padding: 20px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.img-logo {
+  width: 260px;
+}
+
+.link-header-email {
+  font-size: 18px;
+  line-height: 25px;
 }

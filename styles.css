@@ -1,1 +1,23 @@
+:root {
+  --bg-issue-eight: #f6e0a4;
+  --bg-issue-seven: #ff608c;
+  --bg-issue-six: #fff;
+  --bg-issue-five: #00c1b5;
+  --bg-issue-four: #ff6519;
+  --bg-issue-three: #ffbe00;
+  --bg-issue-two: #1d3fbb;
+  --bg-issue-one: #e30512;
+  --font-family: "Roboto", sans-serif;
+}
 
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
